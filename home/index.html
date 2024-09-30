@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyToGo</title>
+
+    
+
+    <!--reset all css style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+    
+        <ul class="menu">
+            <li><a href="index.html">
+                <div class="normal-text tw">Home</div>
+            </a></li>
+            <li><a href="http://localhost:3000/menu.html">
+                <div class="normal-text tw">Menu</div>
+            </a></li>
+            <li><a href="http://localhost:3000/servizi.html">
+                <div class="normal-text tw">Servizi</div>
+            </a></li>
+        </ul>
+        <div class="cta">
+            <a href="http://localhost:3000/login.html" class="button">Registrati o accedi</a>
+        </div>
+        <!--creo 'hamburger' per il menu mobile-->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+            <!-- Pulsante di login per dispositivi mobili -->
+
+        <div class="cta-login">
+            <a href="http://localhost:3000/login.html" class="button">Login/Registrazione</a>
+        </div>
+        
+    </div>
+
+    <div class="hero">
+        <div class="hero__content">
+            <p class="intro-text">Benvenuto su</p>
+            <h1 class="big-text">TASTY TO GO</h1>
+            <a href="#more_information" class="button">Scopri di più</a>
+        </div>
+        <img src="video-back.jpeg" id="video-back">
+    </div>
+
+
+
+    <div class="poster1 mt-3">
+        <div class="poster__content1">
+            <h3 class="big-text">Hamburger deliziosi!</h3>
+            <p>Deliziati con i nostri hamburger succulenti realizzati con ingredienti di prima qualità. Ogni morso è un gusto di perfezione.</p>
+            <a href="menu.html" class="button">Ordina ora</a>
+        </div>
+        <div class="poster__img1">
+            <!--ho rimosso l'immagine se no si sovrappone a bg image in .poster__img-->
+        </div>
+    </div>
+
+
+    <div class="bg-cover mt-3" id="more_information">
+        <div class="bg-cover__title">
+            <h3 class="big-text tw">La nostra carne</h3>
+        </div>
+        <div class="bg-cover__text">
+
+            <h4 class="normal-text tw">Carne di Alta Qualità</h4>
+            <p class="tw">La nostra carne è selezionata con cura da allevamenti di fiducia. Provieni da bovini di razze pregiate e viene sottoposta a rigorosi standard di qualità. Goditi la bontà e la tenerezza di una carne di alta qualità, garantita per soddisfare anche i palati più esigenti.</p>
+
+            <h4 class="normal-text tw">Carne Fresca e Saporita</h4>
+            <p class="tw">La nostra carne è fresca e saporita, grazie alla sua origine selezionata e alla lavorazione attenta. Viene conservata correttamente per mantenere la sua freschezza e viene preparata con cura per esaltare il suo sapore naturale. Assapora ogni boccone e lasciati conquistare dall'autentico gusto della carne.</p>
+
+            <h4 class="normal-text tw">Carne di Qualità Garantita</h4>
+            <p class="tw">Scegli la nostra carne di qualità garantita per assicurarti una gustosa esperienza culinaria. Ogni taglio è attentamente selezionato per garantire la massima qualità e viene sottoposto a controlli rigorosi per garantire la sicurezza alimentare. Delizia il tuo palato con la certezza di una carne di prima scelta.</p>
+        
+        </div>
+    </div>
+
+    <div class="grid mt-3">
+        <div class="col">
+            <h3 class="big-text">Pane da Hamburger Artigianale</h3>
+        </div>
+        <div class="col">
+            <p class="mt-2 mt-smartphone-0">Il nostro pane da hamburger artigianale è realizzato con cura utilizzando ingredienti di alta qualità. Siamo orgogliosi di offrire un pane fresco e soffice che eleva l'esperienza del tuo hamburger. La nostra ricetta segreta e il processo di lievitazione lenta garantiscono un prodotto unico e delizioso.</p>
+        </div>
+    </div>
+
+
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">    <!--la devo creare perchè hanno gia lo slider e non funziona lo zoom-->
+                <img src="video_carousel_1.jpeg" id="video-back">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <img src="video_carousel_2.jpeg" id="video-back">                 
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <img src="video_carousel_3.jpeg" id="video-back">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <img src="video_carousel_4.jpeg" id="video-back">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <img src="video_carousel_5.jpeg" id="video-back">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <img src="video_carousel_6.jpeg" id="video-back">
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="panel-blue mt-3">
+        
+        <div class="grid panel-blue">
+            <div class="col panel-blue__dots">
+                <div class="dot"> Passione </div>
+                <div class="dot"> Tradizione </div>
+                <div class="dot"> Qualità </div>
+                <div class="dot"> Creatività </div>
+            </div>
+            <div class="col panel-blue__text">
+                <div class="grid">
+                    <div class="col">
+                        <h3 class="big-text tw">La nostra storia</h3>
+                    </div>
+                    <div class="col">
+                        <p class="tw mt-2 mt-smartphone-0">TastyToGo è nato dalla passione per il cibo di qualità e dall'amore per l'esperienza culinaria autentica. Fondato nel cuore della città nel 2024, il nostro marchio ha radici profonde nella tradizione culinaria locale.</p>
+                             
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="grid">
+            <div class="col">
+                <h4 class="normal-text tw">Informazioni di Contatto</h4>
+                <p>Indirizzo: Via Lorem Ipsum, 123</p>
+                <p>Telefono: 123-4567890</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div class="col">
+                <h4 class="normal-text tw">Chi Siamo</h4>
+                <p>Siamo un'azienda specializzata nella produzione e distribuzione di prodotti alimentari di alta qualità. Il nostro obiettivo è offrire prodotti certificati e sicuri per i nostri clienti.</p>
+            </div>
+            <div class="col">
+                <h4 class="normal-text tw">Certificazioni</h4>
+                <ul>
+                    <li><a href="https://www.certificazionecarne.com" target="_blank">Certificazione Carne</a></li>
+                    <li><a href="https://www.certificazionegrano.com" target="_blank">Certificazione Grano</a></li>
+                    <li><a href="https://www.certificazionealimenti.com" target="_blank">Certificazione Alimenti</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--message registration-->
+    <div id="message"></div>
+</body>
+
+
+
+
+
+
+<!-- custom JS -->
+
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script src="animation.js"></script>
+
+<script src="hamburger.js"></script>    <!-- querySelector non trova l'elemento se ancora nel DOM-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+</html>

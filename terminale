@@ -1,0 +1,19 @@
+comandi da terminale in caso la pagina servizi.html non dovesse funzionare
+
+eliminazione utente
+curl -X DELETE http://localhost:3000/utenti/username_da_eliminare
+
+aggiornamento password
+curl -X PUT -d "password=nuovapassword" http://localhost:3000/utenti/username_utente_cambio_password/password_da_aggiornare
+
+aggiornamento username
+curl -X PUT -d "username=nuovousername" http://localhost:3000/utenti/username_utente_cambio_username/username_da_aggiornare
+
+restituisce tutto il database utenti
+curl -i http://localhost:3000/user
+
+ricerca utente by username
+curl -i http://localhost:3000/user/username_da_cercare
+
+ricerca utente by email
+curl -i http://localhost:3000/user/email_da_cercare

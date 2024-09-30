@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="regstyle.css">
+</head>
+
+<body>
+    
+
+    <img src="video-back-login copia.jpeg" id="video-back-login">
+
+    <div class="wrapper">
+        <div class="title">Registrazione</div>
+        <form action="http://localhost:3000/utenti" method = "post">
+            <div class="field">
+                <input type="text" name="username" placeholder="Nome utente" required>
+            </div>
+            <div class="field">
+                <input type="text" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="field">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="type">
+                <label for="tipo">Tipo utente:</label>
+                <select name="tipo" id="tipo">
+                    <option value="normale">Normale</option>
+                    <option value="amministratore">Amministratore</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Registrati">
+            </div>
+        </form>
+    </div>
+    <!-- registrazione.html -->
+<div id="message"></div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+
+    <img src="video-back-login.jpeg" id="video-back-login">
+
+    <div class="wrapper">
+        <div class="title">Login</div>
+        <form action="#">
+            <div class="field">
+                <input type="text" id="username" type="username" required>
+                <label>Nome Utente</label>
+            </div>
+            <div class="field">
+                <input type="password" id="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="type">
+                <label for="tipo">Tipo utente:</label>
+                <select name="tipo" id="tipo">
+                    <option value="normale">Normale</option>
+                    <option value="amministratore">Amministratore</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <button type="button" onclick="login()">Login</button>
+            </div>
+            <div class="signup-link">
+                Non sei un membro?  <a href="http://localhost:3000/registrazione.html">Registrati ora</a>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
